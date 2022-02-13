@@ -16,3 +16,6 @@ $ git clone https://github.com/HaibiPeng/instagram-save-ext.git
 5. Go to the post you like on Instagram and copy the link
 ![](./README/step5.png)
 6. Paste the link in the downloader and click Download, then you will see the pictures and videos in the default downloading directory of your Chrome browser.
+
+# Google Web Store
+The extension is submitted and pending review. Might need a couple of weeks until it is published. Let's see what will happen next.
