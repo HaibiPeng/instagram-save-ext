@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { ThemeProvider, Button, Input } from 'react-ui';
 import { tokens, components } from 'react-ui/themes/base';
-
-const instagram_download = require ('@juliendu11/instagram-downloader');
+import { downloadMedia } from 'instagram-save-client';
 
 // overwrite Button sizes
 components.Button.sizes = {
@@ -38,7 +37,7 @@ const Save = () => {
         // const dir = event.target.dir.value;
         console.log("url:", url);
         // console.log("dir:", dir);
-        await instagram_download.downloadMedia(url.split("?")[0]);
+        await downloadMedia(url.split("?")[0]);
     }
 
     return (

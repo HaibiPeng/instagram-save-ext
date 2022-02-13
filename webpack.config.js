@@ -5,7 +5,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     devServer: {
-        contentBase: path.resolve(__dirname, './src'),
+        static : {
+            directory : path.resolve(__dirname, './src'),
+        },
         historyApiFallback: true
     },
     entry: {
@@ -69,7 +71,4 @@ module.exports = {
         }),
         new CleanWebpackPlugin()
     ],
-    node: {
-        fs: "empty",
-    },
 }
